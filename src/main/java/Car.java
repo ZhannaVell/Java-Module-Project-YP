@@ -1,20 +1,15 @@
 public class Car {
-    private String name;
-    private int speed;
+    private static final int RACE_DURATION = 24;
+    public final String name;
+    public final int speed;
     public Car(String name, int speed) {
         this.name = name;
         this.speed = speed;
     }
 
-    public String getName() {
-        return name;
-    }
-    public int getSpeed(){
-        return speed;
-
-    }
-
     public int calculateDistance (){
-        return speed*24;
+        return speed*RACE_DURATION;
     }
 }
+
+
